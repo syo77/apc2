@@ -30,9 +30,6 @@ void exibir_horas(int milissegundos) {
     printf("%02d:%02d:%02d:%03d\n", horas, minutos, segundos, milissegundos);
 }
 
-
-
-
 int main() {
 
     int modulo;
