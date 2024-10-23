@@ -38,21 +38,25 @@ int main() {
 
     printf("Funções\n");
 
+    // Inserção dos dados
 
     printf("Insira o numero que deseja colocar em módulo: ");
     scanf("%d", &modulo);
 
-    printf("O módulo do número %d é igual a |%d|", modulo, abs(modulo));
-    printf("\n");
-
     printf("Verifique se o caractere é digito: ");
     scanf("%c", &digito);
+
+    printf("Digite o tempo em milissegundos: ");
+    scanf("%d", &ms);
+
+    // Resultado da execução das funções
+
+    printf("O módulo do número %d é igual a |%d|", modulo, abs(modulo));
+    printf("\n");
 
     printf("O caractere '%c' retornou %d", digito, is_digit(digito));
     printf("\n");
 
-    printf("Digite o tempo em milissegundos: ");
-    scanf("%d", &ms);
     exibir_horas(ms);
 
     return 0; 
