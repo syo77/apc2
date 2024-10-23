@@ -27,7 +27,7 @@ void exibir_horas(int milissegundos) {
     segundos = resto / (1000);
     resto = resto % (1000);
 
-    printf("%02d:%02d:%02d:%03d\n", horas, minutos, segundos, milissegundos);
+    printf("%02d:%02d:%02d:%03d\n", horas, minutos, segundos, resto);
 }
 
 int main() {
@@ -36,20 +36,23 @@ int main() {
     char digito;
     int ms;
 
-    printf("Funções\n");
-
     /* Inserção dos dados */
+
+    printf("Funções\n");
 
     printf("Insira o numero que deseja colocar em módulo: ");
     scanf("%d", &modulo);
 
     printf("Verifique se o caractere é digito: ");
-    scanf("%c", &digito);
+    scanf(" %c", &digito);
+    /* getchar(); */
 
     printf("Digite o tempo em milissegundos: ");
     scanf("%d", &ms);
 
     /* Resultado da execução das funções */
+
+    printf("Respostas\n");
 
     printf("O módulo do número %d é igual a |%d|", modulo, abs(modulo));
     printf("\n");
