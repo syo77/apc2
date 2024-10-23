@@ -38,7 +38,7 @@ int main() {
 
     printf("Funções\n");
 
-    // Inserção dos dados
+    /* Inserção dos dados */
 
     printf("Insira o numero que deseja colocar em módulo: ");
     scanf("%d", &modulo);
@@ -49,7 +49,7 @@ int main() {
     printf("Digite o tempo em milissegundos: ");
     scanf("%d", &ms);
 
-    // Resultado da execução das funções
+    /* Resultado da execução das funções */
 
     printf("O módulo do número %d é igual a |%d|", modulo, abs(modulo));
     printf("\n");
