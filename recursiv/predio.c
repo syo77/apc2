@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int pIt(int n) {
-    for (int i = 1; i <= n; i++) {
-        
-    }
+int p(int n) {
+    if (n > 0) return p(n-1) + 1;
+    return 0
 }
